@@ -1,0 +1,90 @@
+:root {
+  --clr-violet: hsl(263, 55%, 52%);
+  --clr-grayish-blue: hsl(217, 19%, 35%);
+  --clr-blackish-blue: hsl(219, 29%, 14%);
+  --clr-white: hsl(0, 0%, 100%);
+  /* neutral */
+  --clr-Light-gray: hsl(0, 0%, 81%);
+  --clr-Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+  background-color: var(--clr-Light-grayish-blue);
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90vw;
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.card-container {
+  padding: 2rem;
+  margin: 20px 9px;
+  color: var(--clr-white);
+  border-radius: 10px;
+}
+.card-photo {
+  display: flex;
+  align-items: center;
+}
+
+.card-photo img {
+  border: 3px solid hsl(263, 46%, 61%);
+  border-radius: 50%;
+  height: 40px;
+}
+.card-photo ul {
+  margin-left: 1rem;
+}
+
+.card-photo ul li:last-of-type {
+  opacity: 50%;
+}
+.card-container h2 {
+  margin: 10px 0 20px;
+}
+.card-container p {
+  opacity: 70%;
+  line-height: 1.2;
+  letter-spacing: 0.2px;
+}
+
+.bg-violet {
+  background: var(--clr-violet) url("../images/bg-pattern-quotation.svg") 90% 0%
+    no-repeat;
+  margin-top: 2rem;
+}
+.bg-black {
+  background-color: var(--clr-grayish-blue);
+}
+.bg-dark {
+  background-color: var(--clr-blackish-blue);
+}
+.bg-white {
+  background-color: var(--clr-white);
+  color: var(--clr-grayish-blue);
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: blue;
+  }
+}
